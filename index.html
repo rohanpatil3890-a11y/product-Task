@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>
+        todo-task
+    </title>
+    <script src="https://kit.fontawesome.com/483e17999d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+
+<body>
+
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-md-6 offset-3">
+                <form id="formId">
+                    <div class="card">
+                        <div class="card-header text-center">
+                            <h5>product Item</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="productName">Product Name</label>
+                                <input type="text" id="productName" class="form-control" required>
+                                <label for="productName">Product Description</label>
+                                <input type="text" id="productDes" class="form-control" required>
+                                <label for="productName">Product Image url</label>
+                                <input type="text" id="productImg" class="form-control" required>
+                                <label for="productName">Product rating</label>
+                                <select name="rating" id="rating" class="form-control" required>
+                                    <option value="1">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                            <button id="submitBtn" type="submit" class="btn btn-outline-primary btn-sm btn-block">Add</button>
+                            <button id="updateBtn" type="button" class="btn btn-outline-primary btn-sm btn-block d-none">update</button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+        <div class="row" id="productRow">
+            <!-- <div class="col-md-4">
+                <div class="card produt-card">
+                    <div class="card-body">
+                        <figure>
+                            <img src="https://images.unsplash.com/photo-1761771215071-d304c05a29e6?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170" alt="">
+
+                            <figcaption>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eius quae architecto corporis sed quam blanditiis nisi id mollitia debitis fugit ratione necessitatibus rem, repellat qui consequatur. In, odio et.
+                                </p>
+                            </figcaption>
+                        </figure>
+
+                        <h5 class="mb-3">name<span>12345</span></h5>
+
+                        <div class="d-flex justify-content-between">
+                            <button class="btn btn-outline-primary">Edit</button>
+                            <button class="btn btn-outline-danger">remove</button>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
