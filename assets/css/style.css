@@ -27,6 +27,7 @@ figure img{
     position: absolute;
     top:30%;
     left:0;
+    width:100%;
     padding: 10px;
     height: 70%;
     background-color:rgba(0,0,0,.2);
@@ -51,9 +52,4 @@ figure img{
   font-size: 22px;
 }
 
-/* .produt-card h5 span{
-  overflow: visible;
-white-space: normal;
-text-overflow: clip;
-} */
 

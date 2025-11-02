@@ -47,9 +47,11 @@ const creatProduct = (arr) => {
         if (ratingValue <= 1) {
             ratingValue = 1;
         }
-        if (ratingValue >= 5) {
+        if(ratingValue >= 5) {
             ratingValue = 5;
         }
+       
+        
 
         let rating = "⭐".repeat(ratingValue);
 
@@ -93,6 +95,7 @@ const creatNewProduct = (obj) => {
     if (ratingValue >= 5) {
         ratingValue = 5;
     }
+    
 
     let rating = "⭐".repeat(ratingValue);
 
@@ -206,6 +209,7 @@ const updateEvent = () => {
     if (ratingValue >= 5) {
         ratingValue = 5;
     }
+ 
 
     let rating = "⭐".repeat(ratingValue);
 
@@ -225,11 +229,6 @@ const updateEvent = () => {
         timer: 1500
     });
 }
-
-
-
-
-
 
 
 const onsubmitEvent = (eve) => {
