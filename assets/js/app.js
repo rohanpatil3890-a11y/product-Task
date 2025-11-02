@@ -42,17 +42,17 @@ const localFunction = (arr) => {
 const creatProduct = (arr) => {
     let result = "";
     arr.forEach((pr, i) => {
-        let ratingValue = Number(pr.rating);
-    
-        if (ratingValue <= 1) {
-            ratingValue = 1;
-        }
-        if(ratingValue >= 5) {
-            ratingValue = 5;
-        }
-       
-        
 
+        
+    let ratingValue = Number(pr.rating);
+   
+    if (ratingValue <= 1) {
+        ratingValue = 1;
+    }
+    if (ratingValue >= 5) {
+        ratingValue = 5;
+    }
+        
         let rating = "⭐".repeat(ratingValue);
 
         result += `<div class="col-md-4" id="${pr.productId}">
